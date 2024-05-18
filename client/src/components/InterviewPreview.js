@@ -21,9 +21,7 @@ const InterviewPreview = () => {
     },
   ];
 
-  const [selectedRole, setSelecteRole] = useState({
-    ques: "Give me an example of when you had to assume leadership for your team.",
-  });
+  const [selectedRole, setSelecteRole] = useState(jobRoles[0]);
   return (
     <div className="bg-gray-50 p-8 rounded-lg">
       <p className="text-gray-600">
@@ -35,7 +33,7 @@ const InterviewPreview = () => {
         {jobRoles.map((item, index) => (
           <button
             key={index}
-            className="py-2 px-3 border rounded-full text-gray-500 text-sm hover:bg-gray-100"
+            className={`py-2 px-3 border rounded-full text-sm hover:bg-green-50 ${selectedRole.role === item.role ? "bg-green-50 border-green-300 text-green-700" : "text-gray-500" }`}
             onClick={() => setSelecteRole(item)}
           >
             {item.role}
