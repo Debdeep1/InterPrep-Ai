@@ -1,0 +1,55 @@
+.cards-container h2 {
+    text-align: center;
+    background-color: rgb(75, 74, 74);
+    /* Button styles */
+    color: white; /* Text color for button */
+    padding: 10px 20px; /* Adjust padding for desired button size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Shadow effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out; /* Add hover effect */
+  }
+  
+  .cards-container h2:hover {
+    /* Change background color slightly on hover */
+    background-color: #292929;
+  }
+  
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width:250px;
+}
+.card img {
+    width: 250px;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    align-self: center;
+}
+.card ul {
+    margin-bottom: 10px;
+}
+.proceed-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
