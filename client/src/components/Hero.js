@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="w-[40%]">
+    <div className="">
       <span className="text-cyan-600 bg-cyan-50 font-medium py-1 px-2 rounded-full">
         #1 AI Interview Prep
       </span>
@@ -10,7 +10,8 @@ const Hero = () => {
         <div className="my-4">
           <h2 className="lg:text-5xl font-bold">
             Boost your confidence,{" "}
-            <span className="bg-green-50">ace the job interview</span>
+            <br/>
+            <p className="bg-green-50">ace the job interview</p>
           </h2>
           <p className="lg:text-xl text-gray-500 font-medium my-4">
             Practice job interview questions tailored to your job description.
